@@ -1,0 +1,3 @@
+HEXBERRY-V is currently at version 0.9 (third release). Compared to the previous ones, we have modified the USB-C connector instead of the mini USB connector, and we have switched to a 20KLE FPGA from the the 8KLE FPGA one. Please note that this version is still UNDER TESTING, so it may have design errors. The Licensor assumes no responsibility for any malfunctions in productions that the licensee may implement of the board in this version (ver. 0.9). When all tests are successful, the card version will finally rise to 1.0.xx.
+
+In any case, only the terms indicated in the LICENSE.txt file always included in this repository (and in any case in the folder that includes the project files and this disclaimer) will apply.
