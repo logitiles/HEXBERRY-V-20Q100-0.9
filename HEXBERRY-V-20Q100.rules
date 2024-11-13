@@ -1,0 +1,132 @@
+
+(rules PCB HEXBERRY-V-20Q100
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 3)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 2.0)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+    (layer_rule sig1.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+    (layer_rule GND.Cu
+      (active off)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+    (layer_rule PWR.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule sig2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 2.0)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+  )
+  (rule
+    (width 162.2)
+    (clearance 162.2)
+    (clearance 81.1 (type smd_to_turn_gap))
+    (clearance 40.6 (type smd))
+    (clearance 162.2 (type "kicad_default"))
+  )
+  (padstack "Via[0-5]_719.6:480.62_um"
+    (shape
+      (circle F.Cu 719.6 0.0 0.0)
+    )
+    (shape
+      (circle sig1.Cu 719.6 0.0 0.0)
+    )
+    (shape
+      (circle GND.Cu 719.6 0.0 0.0)
+    )
+    (shape
+      (circle PWR.Cu 719.6 0.0 0.0)
+    )
+    (shape
+      (circle sig2.Cu 719.6 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 719.6 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-5]_719.6:480.62_um" "Via[0-5]_719.6:480.62_um" default
+  )
+  (via 
+    "Via[0-5]_719.6:480.62_um-kicad_default" "Via[0-5]_719.6:480.62_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-5]_719.6:480.62_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-5]_719.6:480.62_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 162.2)
+    )
+    (circuit 
+      (use_layer F.Cu sig1.Cu PWR.Cu sig2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "VCCIO1A_1B_1C" GND VCC 3V3 5V "Net-(U1-Cdelay)" "Net-(U2-Cdelay)" "Net-(U3-Cdelay)"
+    "Net-(JP1-A)" "Net-(D1-K)" 1V2 2V5 1V8 "Net-(U4-FB)" "Net-(D4-A)" "/Power/PWR_EN"
+    "Net-(U6-MR_N)" "Net-(U6-CT)" "Net-(X1-EN)" "VCCA_TR" "VCCIO1D_1E" VCCIO3A "VCCA_BR" VCCIO4A
+    "VCCA_TL" VCCIO4B "VCCIO3B_3C" "VCCIO3D_3E" "Net-(D1-A)" "+5V_RASPB" "Net-(D4-K)" "+3V3_RASPB"
+    "Net-(D7-A)" "Net-(D7-K)" "Net-(D8-A)" "Net-(D8-K)" "Net-(D9-A)" "GPIOR_76" "Net-(D10-A)" "GPIOR_77"
+    "GPIOR_88" "Net-(D11-A)" "/T20/CRESET_N" /T20/TCK "/T20/FTDI_RESET" /T20/HOLD /T20/TDI "/T20/SS_N"
+    /T20/TDO /T20/TMS "GPIOR_155" "unconnected-(J8-Pin_5-Pad5)" "GPIOR_157" "GPIOR_132" "GPIOR_133" "GPIOR_154"
+    "ID_SDA" "ID_SCL" "GPIOR_116" "GPIOR_117" "GPIOR_122" "unconnected-(J10-Pin_6-Pad6)" "GPIOR_94" "GPIOR_123"
+    "GPIOL_75" "GPIOL_72" "GPIOL_46" "GPIOL_73" "GPIOL_66" "GPIOL_67" "GPIOL_54" "GPIOL_53"
+    "unconnected-(U7-GPIOB_CLKN0-Pad52)" "unconnected-(J13-Pin_13-Pad13)" "unconnected-(J13-Pin_24-Pad24)" "GPIOL_13" "unconnected-(J13-Pin_23-Pad23)" "unconnected-(J13-Pin_16-Pad16)" "unconnected-(J13-Pin_37-Pad37)" "unconnected-(J13-Pin_15-Pad15)"
+    "unconnected-(J13-Pin_31-Pad31)" CBSEL1 "GPIOL_41" "GPIOL_20" "GPIOL_31" "GPIOL_21" "unconnected-(J13-Pin_26-Pad26)" CBSEL0
+    "GPIOL_12" "unconnected-(J13-Pin_19-Pad19)" "unconnected-(J13-Pin_22-Pad22)" "GPIOL_24" "unconnected-(J13-Pin_21-Pad21)" "GPIOL_05" "unconnected-(J13-Pin_7-Pad7)" "GPIOL_40"
+    "unconnected-(J13-Pin_18-Pad18)" "unconnected-(J13-Pin_29-Pad29)" "GPIOL_32" "VCCIO_choose1" "VCCIO_choose2" "Net-(JP10-B)" "Net-(JP10-A)" "Net-(JP11-A)"
+    NSTATUS "Net-(Q3-E)" /T20/CDONE "Net-(U2-PWRGD)" "Net-(U3-PWRGD)" "Net-(U4-EN)" "unconnected-(U4-PG-Pad5)" "Net-(R13-Pad1)"
+    /T20/CSI /T20/CBUS0 /T20/CBUS1 "Net-(R20-Pad1)" /T20/CBUS2 "/T20/TEST_N" "/T20/SPI_SS" "Net-(U8-~{WP}(IO2))"
+    "/T20/SPI_MISO" "/T20/SPI_MOSI" "Net-(X1-OUT)" "Net-(U7-GPIOL_74_PLLIN0)" "Net-(U4-SW)" "GPIOR_87" "/T20/SPI_CLK" "unconnected-(U7-GPIOB_CLKP0-Pad51)"
+    "Net-(D6-A)" "unconnected-(U7-GPIOB_TXP10-Pad37)" "unconnected-(U7-GPIOB_RXP00-Pad40)" "unconnected-(U7-GPIOB_RXP03-Pad44)" "unconnected-(U7-GPIOB_RXP06-Pad46)" "unconnected-(U7-GPIOB_RXN06-Pad47)" "unconnected-(U7-GPIOB_TXP07-Pad35)" "unconnected-(U7-GPIOB_RXP09-Pad49)"
+    "unconnected-(U7-GPIOB_TXN10-Pad38)" "unconnected-(U7-GPIOB_TXP04-Pad32)" "unconnected-(U7-REF_RES-Pad27)" "unconnected-(U7-GPIOB_RXN03-Pad43)" "unconnected-(U7-GPIOB_RXN00-Pad41)" "unconnected-(U7-GPIOB_TXN04-Pad33)" "unconnected-(U7-GPIOB_RXN09-Pad48)" "Net-(J2-CC2)"
+    "Net-(J2-CC1)" "Net-(J2-SHIELD)" "GPIOR_78" "GPIOR_79" "Net-(U7-GPIOB_TXP01)" "Net-(U7-GPIOB_TXN01)" "unconnected-(U7-GPIOB_TXN07-Pad36)" "unconnected-(U9-NC-Pad1)"
+    "unconnected-(U9-NC-Pad1)_1" "unconnected-(U9-NC-Pad1)_2" "unconnected-(U9-NC-Pad1)_3" "Net-(JP2-A)" "Net-(JP3-A)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 162.2)
+    )
+    (circuit 
+      (use_layer F.Cu sig1.Cu PWR.Cu sig2.Cu B.Cu)
+    )
+  )
+)

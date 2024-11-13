@@ -1,0 +1,9 @@
+ 
+0.90 to 0.91 vers  (2024/11/13)
+
+- metallized holes to be put in place of the non-metallic ones
+- K (cathode) on D1 placed near the other pad
+- U1: put pin 3 at 5V and not at PWR_EN
+- add 10K pull-up on RESET_N of U6
+- reduce R16 to 10k
+- put 10K between VCCIO1A_1B_1C and CDONE

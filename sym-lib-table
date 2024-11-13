@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SN74HC21DR")(type "KiCad")(uri "/mnt/7cc814c0-c594-4ee3-a9e0-c8a83b9236a7/BACKUP/VARIE PROGETTAZIONE/KICAD/librerie/scaricate/SN74HC21DR/SN74HC21DR.kicad_sym")(options "")(descr ""))
+  (lib (name "2024-07-04_10-55-59")(type "KiCad")(uri "/mnt/7cc814c0-c594-4ee3-a9e0-c8a83b9236a7/BACKUP/VARIE PROGETTAZIONE/KICAD/librerie/scaricate/T20Q100/2024-07-04_10-55-59.kicad_sym")(options "")(descr ""))
+  (lib (name "W25Q32FWSSIG")(type "KiCad")(uri "/home/kkk-big/Desktop/librerie/scaricate/W25Q32FWSSIG/W25Q32FWSSIG.kicad_sym")(options "")(descr ""))
+  (lib (name "2024-07-11_16-18-05")(type "KiCad")(uri "/home/kkk-big/Desktop/librerie/scaricate/TLV840M/2024-07-11_16-18-05.kicad_sym")(options "")(descr ""))
+  (lib (name "ATSHA204A-MAHDA-T")(type "KiCad")(uri "/home/kkk-big/Downloads/ATSHA204A-MAHDA-T/ATSHA204A-MAHDA-T.kicad_sym")(options "")(descr ""))
+)
