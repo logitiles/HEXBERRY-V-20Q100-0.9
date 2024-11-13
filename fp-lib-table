@@ -1,8 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "Desktop")(type "KiCad")(uri "/home/kkk-big/Desktop")(options "")(descr ""))
-  (lib (name "HEXBERRY-V-20-100")(type "KiCad")(uri "/home/kkk-big/Desktop/HEXBERRY-V/HEXBERRY-V-20-100")(options "")(descr ""))
-  (lib (name "Downloads")(type "KiCad")(uri "/home/kkk-big/Downloads")(options "")(descr ""))
-  (lib (name "diodo_mio")(type "KiCad")(uri "${KIPRJMOD}/librerie/diodo_mio.pretty")(options "")(descr ""))
-  (lib (name "librerie")(type "KiCad")(uri "${KIPRJMOD}/librerie")(options "")(descr ""))
-)
